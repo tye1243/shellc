@@ -4,6 +4,8 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { Dumbbell, Users, Monitor, ClipboardList, Phone, Mail, MapPin, ChevronDown, Send } from 'lucide-react'
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 const services = [
   {
     icon: Users,
@@ -55,7 +57,7 @@ export default function Home() {
         <div className="container-custom flex items-center justify-between h-16 md:h-20">
           <div className="flex items-center gap-3">
             <Image
-              src="/images/tye-logo.jpeg"
+              src={`${basePath}/images/tye-logo.jpeg`}
               alt="TYE Logo"
               width={48}
               height={48}
@@ -78,7 +80,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/90 to-dark/40" />
           <div className="absolute right-0 top-0 bottom-0 w-full md:w-1/2">
             <Image
-              src="/images/trainer.jpeg"
+              src={`${basePath}/images/trainer.jpeg`}
               alt="Elite Personal Training"
               fill
               className="object-cover object-center opacity-40 md:opacity-60"
@@ -92,7 +94,7 @@ export default function Home() {
           <div className="max-w-2xl">
             <div className="mb-8">
               <Image
-                src="/images/tye-logo.jpeg"
+                src={`${basePath}/images/tye-logo.jpeg`}
                 alt="TYE - Transform Your Existence"
                 width={200}
                 height={200}
@@ -136,7 +138,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-[3/4] relative overflow-hidden">
                 <Image
-                  src="/images/trainer.jpeg"
+                  src={`${basePath}/images/trainer.jpeg`}
                   alt="Personal Trainer"
                   fill
                   className="object-cover"
@@ -354,7 +356,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
               <Image
-                src="/images/tye-logo.jpeg"
+                src={`${basePath}/images/tye-logo.jpeg`}
                 alt="TYE"
                 width={40}
                 height={40}
