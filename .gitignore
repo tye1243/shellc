@@ -1,0 +1,38 @@
+# dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+dist/
+
+# misc
+.DS_Store
+*.pem
+*.key
+*.cert
+*.p12
+*.log
+
+# project data
+data/
+CLAUDE.md
+
+# debug
+npm-debug.log*
+
+# local env files
+.env
+.env.local
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
